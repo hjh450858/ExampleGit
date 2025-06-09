@@ -14,7 +14,13 @@ import Then
 
 class ViewController: UIViewController {
     
-    let button = UIButton()
+    let button = UIButton().then {
+        $0.layer.cornerRadius = 8
+        $0.layer.borderWidth = 0.3
+        $0.layer.borderColor = UIColor.black.cgColor
+        $0.setTitle("버튼", for: .normal)
+        $0.setTitleColor(.black, for: .normal)
+    }
     
     let disposeBag = DisposeBag()
     
@@ -30,14 +36,19 @@ class ViewController: UIViewController {
     
     func configureUI() {
         view.addSubview(button)
+        
+        button.snp.makeConstraints { make in
+            make.centerY.equalTo(view.snp.centerY)
+            make.leading.trailing.equalTo(view).inset(16)
+        }
     }
 
     
     func binding() {
-        button.rx.tap.asDriver(onErrorJustReturn: ()).drive { [weak self] tap in
+        button.rx.tap.subscribe(onNext: { [weak self] tap in
             guard let self = self else { return }
             print("tap")
-        }
+        }).disposed(by: disposeBag)
     }
 }
 
