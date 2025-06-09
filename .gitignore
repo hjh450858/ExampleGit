@@ -1,0 +1,54 @@
+# Xcode
+*.xcuserdata/
+*.xcuserdatad/
+*.xcuserstate
+*.moved-aside
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+project.xcworkspace/xcuserdata/
+
+# Xcode build
+DerivedData/
+build/
+*.hmap
+*.ipa
+*.xcarchive
+
+# SwiftPM
+.build/
+.swiftpm/
+Package.resolved
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/Build/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Spotlight
+*.Spotlight-V100
+
+# Trash
+.Trashes
+
+# User-specific
+*.swp
+*.lock
+*.env
+*.log

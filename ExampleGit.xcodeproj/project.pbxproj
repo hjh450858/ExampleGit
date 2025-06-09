@@ -11,6 +11,7 @@
 		D2D0C9562DF6AE430044AC4D /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D2D0C9552DF6AE430044AC4D /* RxCocoa */; };
 		D2D0C9582DF6AE430044AC4D /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = D2D0C9572DF6AE430044AC4D /* RxRelay */; };
 		D2D0C95A2DF6AE430044AC4D /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D2D0C9592DF6AE430044AC4D /* RxSwift */; };
+		D2D0C95D2DF6AF4C0044AC4D /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = D2D0C95C2DF6AF4C0044AC4D /* Then */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2D0C95D2DF6AF4C0044AC4D /* Then in Frameworks */,
 				D2D0C9582DF6AE430044AC4D /* RxRelay in Frameworks */,
 				D2D0C9562DF6AE430044AC4D /* RxCocoa in Frameworks */,
 				D2D0C95A2DF6AE430044AC4D /* RxSwift in Frameworks */,
@@ -140,6 +142,7 @@
 				D2D0C9552DF6AE430044AC4D /* RxCocoa */,
 				D2D0C9572DF6AE430044AC4D /* RxRelay */,
 				D2D0C9592DF6AE430044AC4D /* RxSwift */,
+				D2D0C95C2DF6AF4C0044AC4D /* Then */,
 			);
 			productName = ExampleGit;
 			productReference = D2B5B98B2DF6A9B000CCCCB1 /* ExampleGit.app */;
@@ -226,6 +229,7 @@
 			packageReferences = (
 				D2D0C9512DF6AE210044AC4D /* XCRemoteSwiftPackageReference "SnapKit" */,
 				D2D0C9542DF6AE430044AC4D /* XCRemoteSwiftPackageReference "RxSwift" */,
+				D2D0C95B2DF6AF4C0044AC4D /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D2B5B98C2DF6A9B000CCCCB1 /* Products */;
@@ -606,6 +610,14 @@
 				minimumVersion = 6.9.0;
 			};
 		};
+		D2D0C95B2DF6AF4C0044AC4D /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -628,6 +640,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D2D0C9542DF6AE430044AC4D /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		D2D0C95C2DF6AF4C0044AC4D /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2D0C95B2DF6AF4C0044AC4D /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
