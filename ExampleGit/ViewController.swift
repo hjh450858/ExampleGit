@@ -7,12 +7,13 @@
 
 import UIKit
 import SnapKit
+import Then
 import RxSwift
 
 
 class ViewController: UIViewController {
     
-    
+    let button = UIButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
