@@ -45,10 +45,20 @@ class ViewController: UIViewController {
 
     
     func binding() {
-        button.rx.tap.subscribe(onNext: { [weak self] tap in
+//        button.rx.tap.subscribe(onNext: { [weak self] tap in
+//            guard let self = self else { return }
+//            print("tap")
+//        }).disposed(by: disposeBag)
+        
+//        button.rx.tap.asDriver(onErrorJustReturn: ()).drive { [weak self] tap in
+//            guard let self = self else { return }
+//            print("tap")
+//        }
+        
+        button.rx.tap.asSignal().emit { [weak self] tap in
             guard let self = self else { return }
             print("tap")
-        }).disposed(by: disposeBag)
+        }.disposed(by: disposeBag)
     }
 }
 
