@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
+  "originHash" : "427750f1c2e7dfa07881e8d92d79b7f6701ced4a17ec11b439e5c84172a915b3",
+=======
   "originHash" : "22b81ed8c217a772fe18fa55b7302753dbf2deeaa8026b2fbe2d78ae084eddc6",
+>>>>>>> origin/first
   "pins" : [
     {
       "identity" : "rxswift",
